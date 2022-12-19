@@ -12285,3 +12285,14 @@ body.dark-theme {
   font-size: 13px; 
   text-align: left;
 }
+
+.faq-text {
+  font-size: 13px; 
+  text-align: left;
+  color: white;
+}
+.faq-title {
+  font-size: 16px;
+  text-align: left;
+  color: white;
+}

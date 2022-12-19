@@ -18,29 +18,56 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
 
     <!-- page navbar -->
-    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
-        <ul class="nav-navbar container">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><img src="assets/img/onlyangels.png"
-                        alt="Only Angels Logo"></a>
+    <!-- <nav class="page-navbar" data-spy="affix" data-offset-top="10"> -->
+    <header class="custom-navbar">
+        <ul class="nav-navbar container menu" id="menu-primary">
+            <input id="menu_is_active" type="checkbox">
+            <li class="custom-logo"><a href="#"><img src="assets/img/onlyangels.png" alt="Only Angels Logo"></a>
             </li>
-            <!-- <li class="nav-item"><a href="#" class="nav-link">Journal</a></li> -->
-            <!--  <li class="nav-item search">
-                <a href="javascript:void(0)" class="nav-link search-toggle"><i class="ti-search"></i> Search</a>
-                <div class="search-wrapper">
-                    <form>
-                        <input type="search" class="form-control" name="" placeholder="hit enter to search">
-                    </form>
-                </div>
-            </li> -->
-            <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
-            <li><a href="https://twitter.com/OnlyAngelsOF" target="_blank" class="nav-link ti-twitter"></a></li>
-            <li><a href="https://www.instagram.com/only_angelsagency/" target="_blank"
-                    class="nav-link ti-instagram"></a></li>
+            <li class=" menu-item" id="menu-item-19"><a href="#">Home</a></li>
+            <li class="menu-item" id="menu-item-20"><a href="#services">Services</a></li>
+
+
+            <li class="menu-item" id="menu-item-22"><a href="#">FAQ</a></li>
+            <li class="menu-item" id="menu-item-23"><a href="#">Contact us</a></li>
+            <li class="menu-item" id="menu-item-24"><a href="https://twitter.com/OnlyAngelsOF" target="_blank"
+                    class="ti-twitter"></a></li>
+            <li class="menu-item" id="menu-item-25"><a href="https://www.instagram.com/only_angelsagency/"
+                    target="_blank" class="ti-instagram"></a></li>
+            <li class="toggle nav-link">
+                <label for="menu_is_active" class="toggle-link ti-menu">
+
+
+                </label>
+            </li>
         </ul>
-    </nav><!-- end of page navbar -->
+    </header>
+    <!-- </nav> -->
+    <!-- end of page navbar -->
+    <!-- 
+    <header>
+        <ul id="menu-primary" class="menu">
+            <input id="menu_is_active" type="checkbox">
+            <li class="custom-logo">
+                <img src="https://www.logologo.com/logos/spinning-letter-s-logo.jpg">
+            </li>
+            <li id="menu-item-19" class="menu-item"><a href="#">Home</a></li>
+            <li id="menu-item-20" class="menu-item"><a href="#">About Us</a></li>
+            <li id="menu-item-21" class="menu-item"><a href="#">Contact Us</a></li>
+            <li id="menu-item-22" class="menu-item"><a href="#">News</a></li>
+            <li class="nav-search">
+                <form method="get" action="/" class="nav-form-container">
+                    <input class="form-control" name="s" type="search" placeholder="Search">
+                </form>
+            </li>
+            <li class="toggle">
+                <label for="menu_is_active" class="toggle-link">
+                    <i class="las la-bars"></i>
+                    <i class="las la-times"></i>
+                </label>
+            </li>
+        </ul>
+    </header> -->
 
     <!--  <div class="theme-selector">
         <a href="javascript:void(0)" class="spinner">
@@ -220,8 +247,8 @@
         <hr class="solid">
         <br>
 
-        <!-- FAQ section-->
-        <h2 class="heading-separator" id="FAQ">FAQ</h2> <br>
+        <!-- FAQ CUSTOM section-->
+        <!--         <h2 class="heading-separator" id="FAQ">FAQ</h2> <br>
         <div id="accordion">
             <div class="card">
                 <div class="card-header btn-outline-dark" id="headingOne">
@@ -286,8 +313,94 @@
                         of them accusamus labore sustainable VHS.
                     </div>
                 </div>
+            </div> 
+        </div> --> <!--end of FAQ DIV-->
+
+        <!--prueba faq-->
+
+        <div class="faq_area section_padding_130" id="faq">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-8 col-lg-6">
+                        <!-- Section Heading-->
+                        <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                            <h3><span>Frequently </span> Asked Questions</h3>
+                            <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing
+                                page.</p>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <!-- FAQ Area-->
+                    <div class="col-12 col-sm-10 col-lg-8">
+                        <div class="accordion faq-accordian" id="faqAccordion">
+                            <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s"
+                                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <div class="card-header" id="headingOne">
+                                    <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">How can I install this
+                                        app?<span class="lni-chevron-up"></span></h6>
+                                </div>
+                                <div class="collapse" id="collapseOne" aria-labelledby="headingOne"
+                                    data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem
+                                            facere deserunt sint animi sapiente vitae suscipit.</p>
+                                        <p>Appland is completely creative, lightweight, clean &amp; super responsive app
+                                            landing page.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border-0 wow fadeInUp" data-wow-delay="0.3s"
+                                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                                <div class="card-header" id="headingTwo">
+                                    <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">The apps isn't installing?<span
+                                            class="lni-chevron-up"></span></h6>
+                                </div>
+                                <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo"
+                                    data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem
+                                            facere deserunt sint animi sapiente vitae suscipit.</p>
+                                        <p>Appland is completely creative, lightweight, clean &amp; super responsive app
+                                            landing page.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border-0 wow fadeInUp" data-wow-delay="0.4s"
+                                style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                                <div class="card-header" id="headingThree">
+                                    <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="true" aria-controls="collapseThree">Contact form isn't
+                                        working?<span class="lni-chevron-up"></span></h6>
+                                </div>
+                                <div class="collapse" id="collapseThree" aria-labelledby="headingThree"
+                                    data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem
+                                            facere deserunt sint animi sapiente vitae suscipit.</p>
+                                        <p>Appland is completely creative, lightweight, clean &amp; super responsive app
+                                            landing page.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Support Button-->
+                        <div class="support-button text-center d-flex align-items-center justify-content-center mt-4 wow fadeInUp"
+                            data-wow-delay="0.5s"
+                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                            <i class="lni-emoji-sad"></i>
+                            <p class="mb-0 px-2">Can't find your answers?</p>
+                            <a href="#"> Contact us</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div><!--end of FAQ DIV-->
+        </div>
+        <!--fin prueba faq-->
 
     </div> <!-- end of page container -->
 

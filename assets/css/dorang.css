@@ -11839,10 +11839,10 @@ a:hover {
 }
 
 .footer .infos {
-  text-align: right;
+  text-align: center;
   color: #fff;
   opacity: 1;
-  width: 50%;
+  width: 100%;
   margin-bottom: -1px;
   padding: 0 4px;
   font-size: 14px;
@@ -12531,4 +12531,17 @@ header {
 }
 .instatwitter{
   color:#17a2b8;
+}
+.contactsocial{
+  list-style-type: none;
+  display: inline-flex;
+
+}
+.iconstwinsta{
+  padding-right: 50%;
+}
+.provadiv{
+  align-items: center   !important;
+  width: 100% !important;
+
 }

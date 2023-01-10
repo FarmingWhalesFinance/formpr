@@ -11,7 +11,7 @@
                     <input type="email" class="form-control" placeholder="Enter Email" name="email" required>
                     <textarea name="message" id="comment" rows="6" class="form-control"
                         placeholder="Write Something"></textarea>
-                    <input type="submit" value="Send Message" class="form-control">
+                    <input type="submit" value="Send Message" name="submit" class="form-control">
                 </form>
 </body>
 </html>

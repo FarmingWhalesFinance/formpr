@@ -426,7 +426,7 @@
                                                 class="instatwitter">Instagram</a> or <a
                                                 href="https://twitter.com/OnlyAngelsOF"
                                                 class="instatwitter">Twitter</a>, or send us an email
-                                            to contactonlyangelsagency@gmail.com. Be sure to include:
+                                            to contact@onlyangelsofagency.com. Be sure to include:
                                             1. Why would you be a good fit in our model roster.
                                             2. Your modelling portfolio (a social media profile or a series of
                                             self-portraits are accepted)
@@ -476,13 +476,22 @@
                 <p class="mb-5">...or Feel Free To Drop Us A Line.</p>
 
 
-                <form action="mailto:contactonlyangelsagency@gmail.com" class="form-group">
+                <!--     <form method="post" class="form-group">
                     <input type="text" size="50" class="form-control" placeholder="Your Name" required>
-                    <input type="email" class="form-control" placeholder="Enter Email" requried>
+                    <input type="email" class="form-control" placeholder="Enter Email" required>
                     <textarea name="comment" id="comment" rows="6" class="form-control"
                         placeholder="Write Something"></textarea>
                     <input type="submit" value="Send Message" class="form-control">
+                </form> -->
+                <?php include 'sendmail.php'; ?>
+                <form method="post" class="form-group">
+                    <input type="text" size="50" class="form-control" placeholder="Your Name" name="name" required>
+                    <input type="email" class="form-control" placeholder="Enter Email" name="email" required>
+                    <textarea name="message" id="comment" rows="6" class="form-control"
+                        placeholder="Write Something"></textarea>
+                    <input type="submit" value="Send Message" name="submit" class="form-control">
                 </form>
+
             </div>
 
             <!-- footer -->
